@@ -1,0 +1,37 @@
+<head>
+</head>
+<body>
+<div style="width: 100%; max-width: 512px;">
+    <div style="border: 1px solid #000; position: relative; width: 100%; padding: 0;" id="video-1"  class="videoplayer">
+    </div>
+    <script type="text/javascript" src="https://www.uvic.ca/video/player/js/7.11.2/jwplayer.js"></script>
+    <script type="text/javascript">jwplayer.key="UJGcVouk597phvGZrziZMHAb3IRluP27vKFmTIMbWyw=";</script>
+    <script type="text/javascript">
+            var p = jwplayer('video-1').setup({ 
+            flashplayer: "http://www.uvic.ca/video/player/jwplayer.flash.swf",
+            playlist: [
+                { title: "", image: "http://hlsvod.uvic.ca/vod/zastre/csc230/assign03/video-1-title.jpg", sources: [{ file: "https://hlsvod.uvic.ca/hls-vod/zastre/csc230/assign03/video-1-720p30.mp4.m3u8"}], tracks: []}
+            ],
+            primary: 'html5',
+            hlshtml: 'true',
+            width: '100%',
+            aspectratio: '16:9',
+            autostart: 'false',
+            repeat: 'false',
+            controls: 'true',
+            logo: {
+                file: 'http://hlsvod.uvic.ca/vod/zastre/uviccopyright.png',
+                link: 'http://www.uvic.ca',
+                position: 'top-right',
+                hide: 'false'
+            },
+            rtmp: {
+                bufferlength: '5'
+            }
+        });
+        p.setVolume(50);
+    </script></div><!-- Closes video player -->
+<hr>
+
+
+</body>
